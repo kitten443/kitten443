@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="280" viewBox="0 0 1180 280" fill="none" font-family="Inter, Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" role="img" aria-label="Request lifecycle: client, API in Go, Python and PHP workers, PostgreSQL and Redis">
+  <title>Request lifecycle</title>
+  <defs>
+    <linearGradient id="p-bg" x1="0" y1="0" x2="1180" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1020"/>
+      <stop offset="0.6" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#070B14"/>
+    </linearGradient>
+    <radialGradient id="p-glowA" cx="0" cy="0" r="1" gradientTransform="translate(90 0) scale(280 180)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="p-glowB" cx="0" cy="0" r="1" gradientTransform="translate(1120 290) scale(300 200)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="p-hair" x1="0" y1="0" x2="1180" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="0.65" stop-color="#A78BFA" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="p-grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#FFFFFF" stroke-opacity="0.035"/>
+    </pattern>
+    <clipPath id="p-clip"><rect width="1180" height="280" rx="26"/></clipPath>
+    <style>
+      @keyframes p-flow { to { stroke-dashoffset: -24; } }
+      @keyframes p-dot { 0% { opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { opacity: 0; } }
+      .p-flow { stroke-dasharray: 4 8; animation: p-flow 1.6s linear infinite; }
+      .p-dot { animation: p-dot 3s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#p-clip)">
+    <rect width="1180" height="280" fill="url(#p-bg)"/>
+    <rect width="1180" height="280" fill="url(#p-grid)"/>
+    <rect width="1180" height="280" fill="url(#p-glowA)"/>
+    <rect width="1180" height="280" fill="url(#p-glowB)"/>
+    <rect x="0.5" y="0.5" width="1179" height="279" rx="25.5" stroke="#FFFFFF" stroke-opacity="0.09"/>
+    <rect width="1180" height="1.6" fill="url(#p-hair)"/>
+
+    <text x="56" y="52" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="2.6" fill="#4CC2FF">// REQUEST LIFECYCLE</text>
+    <text x="1124" y="52" text-anchor="end" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1.8" fill="#5E6F8C">SINGLE FLIGHT · RETRIES · BACKPRESSURE</text>
+    <line x1="56" y1="70" x2="1124" y2="70" stroke="#FFFFFF" stroke-opacity="0.07"/>
+
+    <!-- connectors -->
+    <g stroke="#4CC2FF" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" class="p-flow">
+      <path d="M293 152H333"/>
+      <path d="M570 152H610"/>
+      <path d="M847 152H887"/>
+    </g>
+    <g fill="#4CC2FF" fill-opacity="0.55">
+      <path d="M326 148l6 4-6 4z"/>
+      <path d="M603 148l6 4-6 4z"/>
+      <path d="M880 148l6 4-6 4z"/>
+    </g>
+
+    <!-- 01 CLIENT -->
+    <g>
+      <rect x="56" y="94" width="237" height="112" rx="14" fill="#FFFFFF" fill-opacity="0.03" stroke="#FFFFFF" stroke-opacity="0.09"/>
+      <text x="74" y="119" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1.6" fill="#46566F">01</text>
+      <text x="200" y="119" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1.6" fill="#46566F" text-anchor="end">outside</text>
+      <circle cx="78" cy="150" r="3.6" fill="#8FA0BC"/>
+      <text x="90" y="154" font-size="15.5" font-weight="600" fill="#E9EFFA">Client</text>
+      <text x="74" y="180" font-size="11.5" fill="#8FA0BC">browser · mobile · bot</text>
+      <text x="74" y="196" font-size="11.5" fill="#6F7F9C">plain HTTP, no favours</text>
+    </g>
+
+    <!-- 02 API -->
+    <g>
+      <rect x="333" y="94" width="237" height="112" rx="14" fill="#4CC2FF" fill-opacity="0.045" stroke="#4CC2FF" stroke-opacity="0.3"/>
+      <text x="351" y="119" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1.6" fill="#46566F">02</text>
+      <text x="477" y="119" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1.6" fill="#4CC2FF" text-anchor="end">GO</text>
+      <circle cx="355" cy="150" r="3.6" fill="#4CC2FF"/>
+      <text x="367" y="154" font-size="15.5" font-weight="600" fill="#E9EFFA">API</text>
+      <text x="351" y="180" font-size="11.5" fill="#9DBBD2">REST · auth · validation</text>
+      <text x="351" y="196" font-size="11.5" fill="#6F7F9C">nginx · TLS · rate limits</text>
+    </g>
+
+    <!-- 03 WORKERS -->
+    <g>
+      <rect x="610" y="94" width="237" height="112" rx="14" fill="#FFFFFF" fill-opacity="0.03" stroke="#FFFFFF" stroke-opacity="0.09"/>
+      <text x="628" y="119" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1.6" fill="#46566F">03</text>
+      <text x="754" y="119" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1.6" fill="#A98BFF" text-anchor="end">PY3 · PHP</text>
+      <circle cx="632" cy="150" r="3.6" fill="#A98BFF"/>
+      <text x="644" y="154" font-size="15.5" font-weight="600" fill="#E9EFFA">Workers</text>
+      <text x="628" y="180" font-size="11.5" fill="#8FA0BC">jobs · parsers · integrations</text>
+      <text x="628" y="196" font-size="11.5" fill="#6F7F9C">idempotent, retry-safe</text>
+    </g>
+
+    <!-- 04 DATA -->
+    <g>
+      <rect x="887" y="94" width="237" height="112" rx="14" fill="#FFFFFF" fill-opacity="0.03" stroke="#FFFFFF" stroke-opacity="0.09"/>
+      <text x="905" y="119" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1.6" fill="#46566F">04</text>
+      <text x="1031" y="119" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1.6" fill="#3FD68C" text-anchor="end">STATE</text>
+      <circle cx="909" cy="150" r="3.6" fill="#3FD68C"/>
+      <text x="921" y="154" font-size="15.5" font-weight="600" fill="#E9EFFA">Data</text>
+      <text x="905" y="180" font-size="11.5" fill="#8FA0BC">PostgreSQL · Redis</text>
+      <text x="905" y="196" font-size="11.5" fill="#6F7F9C">backups that restore</text>
+    </g>
+
+    <!-- response path -->
+    <g stroke="#3FD68C" stroke-opacity="0.45" stroke-width="1.5" stroke-linecap="round" fill="none">
+      <path d="M1005 206V244H176V214" stroke-dasharray="5 7" class="p-flow"/>
+    </g>
+    <g fill="#3FD68C" fill-opacity="0.6">
+      <path d="M176 206l-5 9h10z"/>
+    </g>
+    <rect x="512" y="232" width="156" height="23" rx="11.5" fill="#0B1220" stroke="#3FD68C" stroke-opacity="0.28"/>
+    <text x="590" y="247.5" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1.4" fill="#7FDDAE">RESPONSE · 200 OK</text>
+    <circle cx="760" cy="244" r="3" fill="#3FD68C" class="p-dot"/>
+  </g>
+</svg>
