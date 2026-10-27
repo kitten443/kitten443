@@ -46,27 +46,27 @@
     <rect x="0.5" y="0.5" width="1179" height="419" rx="25.5" stroke="#FFFFFF" stroke-opacity="0.09"/>
     <rect width="1180" height="1.6" fill="url(#s-hair)"/>
 
-    <text x="56" y="50" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="2.6" fill="#4CC2FF">// STACK</text>
+    <text x="56" y="50" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="2.6" fill="#4CC2FF">// STACK</text>
     <text x="56" y="90" font-size="26" font-weight="700" letter-spacing="-0.4" fill="#EAF1FB">Three languages, one job: keep it running</text>
     <line x1="56" y1="106" x2="1124" y2="106" stroke="#FFFFFF" stroke-opacity="0.07"/>
-    <text x="1124" y="88" text-anchor="end" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.8" fill="#5E6F8C">BACKEND · SYSTEMS · TOOLING</text>
+    <text x="1124" y="88" text-anchor="end" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1.8" fill="#5E6F8C">BACKEND · SYSTEMS · TOOLING</text>
 
     <!-- GO -->
     <g>
       <rect x="56" y="120" width="336" height="200" rx="16" fill="#FFFFFF" fill-opacity="0.028" stroke="#FFFFFF" stroke-opacity="0.08"/>
       <circle cx="86" cy="152" r="4.4" fill="#29C8E8"/>
-      <text x="100" y="156" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="2.4" fill="#29C8E8">GO</text>
-      <text x="84" y="194" font-size="21" font-weight="700" fill="#EAF1FB">Services &amp; gateways</text>
-      <text x="84" y="218" font-size="12.5" fill="#8FA0BC">APIs, proxies, high-load I/O</text>
+      <text x="100" y="156" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" letter-spacing="2.4" fill="#29C8E8">GO</text>
+      <text x="84" y="194" font-size="22" font-weight="700" fill="#EAF1FB">Services &amp; gateways</text>
+      <text x="84" y="218" font-size="13.5" fill="#8FA0BC">APIs, proxies, high-load I/O</text>
       <g>
         <rect x="84" y="236" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="97" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">net/http</text>
+        <text x="97" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">net/http</text>
         <rect x="228" y="236" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="241" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">goroutines</text>
+        <text x="241" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">goroutines</text>
         <rect x="84" y="272" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="97" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">CLI tooling</text>
+        <text x="97" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">CLI tooling</text>
         <rect x="228" y="272" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="241" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">xray-core</text>
+        <text x="241" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">xray-core</text>
       </g>
     </g>
 
@@ -74,18 +74,18 @@
     <g>
       <rect x="422" y="120" width="336" height="200" rx="16" fill="#FFFFFF" fill-opacity="0.028" stroke="#FFFFFF" stroke-opacity="0.08"/>
       <circle cx="452" cy="152" r="4.4" fill="#FFC93C"/>
-      <text x="466" y="156" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="2.4" fill="#FFC93C">PYTHON 3</text>
-      <text x="450" y="194" font-size="21" font-weight="700" fill="#EAF1FB">Automation &amp; tooling</text>
-      <text x="450" y="218" font-size="12.5" fill="#8FA0BC">Scripts, parsers, quick research</text>
+      <text x="466" y="156" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" letter-spacing="2.4" fill="#FFC93C">PYTHON 3</text>
+      <text x="450" y="194" font-size="22" font-weight="700" fill="#EAF1FB">Automation &amp; tooling</text>
+      <text x="450" y="218" font-size="13.5" fill="#8FA0BC">Scripts, parsers, quick research</text>
       <g>
         <rect x="450" y="236" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="463" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">asyncio</text>
+        <text x="463" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">asyncio</text>
         <rect x="594" y="236" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="607" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">aiohttp</text>
+        <text x="607" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">aiohttp</text>
         <rect x="450" y="272" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="463" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">parsers</text>
+        <text x="463" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">parsers</text>
         <rect x="594" y="272" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="607" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">CVE checks</text>
+        <text x="607" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">CVE checks</text>
       </g>
     </g>
 
@@ -93,38 +93,38 @@
     <g>
       <rect x="788" y="120" width="336" height="200" rx="16" fill="#FFFFFF" fill-opacity="0.028" stroke="#FFFFFF" stroke-opacity="0.08"/>
       <circle cx="818" cy="152" r="4.4" fill="#A98BFF"/>
-      <text x="832" y="156" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="2.4" fill="#A98BFF">PHP</text>
-      <text x="816" y="194" font-size="21" font-weight="700" fill="#EAF1FB">Web APIs &amp; glue</text>
-      <text x="816" y="218" font-size="12.5" fill="#8FA0BC">Back-office, integrations, legacy</text>
+      <text x="832" y="156" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" letter-spacing="2.4" fill="#A98BFF">PHP</text>
+      <text x="816" y="194" font-size="22" font-weight="700" fill="#EAF1FB">Web APIs &amp; glue</text>
+      <text x="816" y="218" font-size="13.5" fill="#8FA0BC">Back-office, integrations, legacy</text>
       <g>
         <rect x="816" y="236" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="829" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">REST APIs</text>
+        <text x="829" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">REST APIs</text>
         <rect x="960" y="236" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="973" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">MySQL</text>
+        <text x="973" y="254" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">MySQL</text>
         <rect x="816" y="272" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="829" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">composer</text>
+        <text x="829" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">composer</text>
         <rect x="960" y="272" width="136" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
-        <text x="973" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#B9C8DE">migrations</text>
+        <text x="973" y="290" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#B9C8DE">migrations</text>
       </g>
     </g>
 
     <!-- foundation -->
     <line x1="56" y1="344" x2="1124" y2="344" stroke="#FFFFFF" stroke-opacity="0.07"/>
-    <text x="56" y="380" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="2.6" fill="#5E6F8C">SHARED FOUNDATION</text>
-    <g font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#9FB0C9">
-      <rect x="240" y="364" width="88" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
-      <text x="252" y="380">PostgreSQL</text>
-      <rect x="338" y="364" width="57" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
-      <text x="350" y="380">Redis</text>
-      <rect x="405" y="364" width="64" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
-      <text x="417" y="380">Docker</text>
-      <rect x="479" y="364" width="57" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
-      <text x="491" y="380">Linux</text>
-      <rect x="546" y="364" width="57" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
-      <text x="558" y="380">Nginx</text>
-      <rect x="613" y="364" width="46" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
-      <text x="625" y="380">Git</text>
+    <text x="56" y="380" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="2.6" fill="#5E6F8C">SHARED FOUNDATION</text>
+    <g font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#9FB0C9">
+      <rect x="240" y="364" width="94" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
+      <text x="253" y="380">PostgreSQL</text>
+      <rect x="344" y="364" width="60" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
+      <text x="357" y="380">Redis</text>
+      <rect x="414" y="364" width="66" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
+      <text x="428" y="380">Docker</text>
+      <rect x="490" y="364" width="60" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
+      <text x="503" y="380">Linux</text>
+      <rect x="560" y="364" width="60" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
+      <text x="573" y="380">Nginx</text>
+      <rect x="630" y="364" width="46" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.07"/>
+      <text x="641" y="380">Git</text>
     </g>
-    <text x="1124" y="380" text-anchor="end" font-size="12" fill="#6F7F9C">and a healthy distrust of anything unmeasured</text>
+    <text x="1124" y="380" text-anchor="end" font-size="12.5" fill="#6F7F9C">and a healthy distrust of anything unmeasured</text>
   </g>
 </svg>
